@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Open+Sans:wght@300;500;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+}
+
+$nunito: "Nunito";
+$open-sense: "Open Sans";
+
+@import "./NavBar.scss";
+@import "./Goal_section.scss";
+@import "./Diploma_Section.scss";
+@import "./Hover.scss";
+@import "./footer.scss";
+@import "./mediaqueries.scss";
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff7900;
+  border-radius: 10px;
+  border: 1px solid rgb(107, 107, 107);
+}
+
+.phone {
+  transition: all .5s ease-in-out;
+  transform: translateX(-200%);
+  width: 90%;
+  overflow: auto;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 2rem 1rem;
+  z-index:10000;
+  background-color: white;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  display: none;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > img {
+      width: 70%;
+    }
+    >span{
+    cursor: pointer;
+        > svg {
+            font-size: 3rem;
+        }
+    }
+  }
+  > ul {
+    padding:0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #999;
+      width: 100%;
+      padding: 1rem;
+      color: rgb(0, 0, 0);
+      font-size: 1.5rem;
+      font-family: $open-sense;
+      font-weight: 600;
+      >svg{
+        font-size: 1.5rem;
+    }
+    }
+  }
+}
+
+.bar-btn{
+   position: absolute;
+   top:1%;
+   left: 4%;
+   font-size: 2rem;
+   background-color: transparent;
+   border: none;
+    color: #ff7900;
+    display:none;
+}
+

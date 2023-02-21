@@ -1,0 +1,206 @@
+
+
+
+.container{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: $nunito;   
+    position: absolute;
+    width: 85%;
+    height:unset;
+    display: flex;
+    top: 2%;
+    left: 5%;
+    z-index: 100;
+border: 1px solid white;
+   border-radius: 5px;
+.left-part{
+   width: 30%;
+    background-color: #f8f8f8;
+>.upper-page{
+    padding: 1rem;
+    >h3{
+        font-size: .9rem;
+    }
+    >.mini-box{
+        width: 100%;
+        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        gap: 1rem;
+
+
+>.mini-card{
+    font-family: $nunito;
+    width: 130px;
+    max-height: 100px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 5px;
+    >p{
+        font-size: .6rem;
+        font-weight: 600;
+    }
+}
+       
+    }
+}
+
+    
+    >.lower-page{
+      font-family: $nunito;
+      padding: 1rem;
+      display: flex;
+      flex-direction:column;
+      gap: 1rem;
+      >h3{
+        font-size: 1rem;
+    }
+   >div{
+       
+       max-width: 300px;
+       padding: 1rem;
+       display: flex;
+       gap: 1rem;
+       justify-content: center;
+    align-items: center;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 5px;
+    >img{
+        border-radius: 50%;
+    }
+     >.details{
+         display: flex;
+         flex-direction: column;
+         gap: .5rem;
+         p{
+             font-size: .9rem;
+             font-weight:500;
+            }
+         >h4{
+            align-self: center;
+         }
+     }
+}
+  }
+
+}
+
+.right-part{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1rem 1rem;
+    >.upper{
+        border-bottom: 1px solid rgb(188, 188, 188);
+        padding: 2rem 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        >.left{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            >div{
+                &:first-of-type{
+
+                    height: 80px;
+                    box-shadow: 0 0 10px #888;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    width:80px;
+                }
+                &:last-of-type{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                >h2{
+                    color: #ff7900;
+                    font-family: $open-sense;
+                    font-weight: 600;
+                }
+                >p{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                }
+            }
+           
+        }
+        >button{
+            width: 30px;
+            height: 30px;
+            background-color: #e9e9e9;
+            font-size: 1.5rem;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            border-radius: 50%;
+            border: none;
+        }
+    }
+
+    >.middle{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:  1.5rem 1rem;
+        width: 100%;
+        padding: 1rem;
+        >input{
+            height: 7vh;
+            padding-left: 1rem;
+            font-size: .9rem;
+            outline: none;
+            border: 1px solid rgb(226, 226, 226);
+            border-radius: 4px;
+        }
+
+    }
+    
+    >.lower{
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        >p{
+            font-size: .9rem;
+            font-weight: 600;
+            >span{
+                color: rgb(0, 221, 221);
+            }
+        }
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >a{
+                color: #ff7900;
+                font-size: 1.2rem;
+                &:hover{
+                  text-decoration: underline;
+                }
+            }
+            >button{
+                padding: .8rem 1.3rem;
+                border: none;
+                background-color: #ff7900;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+  
+}

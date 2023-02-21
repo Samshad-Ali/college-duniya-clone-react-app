@@ -1,0 +1,400 @@
+@media  only screen and (max-width:1194px) {
+  footer{
+    flex-direction: column;
+    gap: 1rem;
+    >div{
+      flex-direction: column;
+      gap: .5rem;
+    }
+  }
+  .bar-btn{
+    display: inline;
+  }
+
+  .phone{
+    display: block;
+  }
+  .phoneCome{
+    transform: translateX(0);
+  }
+
+    header{
+        animation: background 10s ease-in-out  infinite;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         >nav{
+            display: none;
+         }
+      
+      .second-nav {
+       display: none;
+      }
+   
+        
+        
+        .main {
+       position: relative;
+        width: 100%;
+          height: 80vh;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3rem;
+          h1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          color: white;
+          letter-spacing: 3px;
+          font-size: 2rem;
+          font-weight: 600;
+          > span {
+            margin-inline: 0.5rem;
+          }
+        }
+      
+        >div{
+          width: 100%;
+       
+           >input{
+              height: 8vh;
+              width:100% ;
+              font-size: .9rem;
+             
+            }
+           >svg{
+             position: absolute;
+              color: gray;
+              left: 3%;
+              font-size: 1rem;
+              
+            }
+            >.search{
+              height: 8vh;
+              
+           }
+          }
+      
+          >.bottom{
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            >div{
+             display: none;
+            }
+         
+          }
+          
+        }
+        
+      }
+
+
+      .goal-section{
+       padding: 1rem;
+        >h2{
+             font-size: 1.5rem;
+            
+        }
+        >button{
+            width: fit-content;
+            align-self: center;
+            background-color: white;
+            border: 1px solid #ff7900;
+            color: #ff7900;
+            padding: .6rem .8rem;
+            border-radius: 5px;
+        }
+    }
+    
+    .cart{
+        width: 370px;
+
+    
+        >div{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            >h3{
+                font-size: .8rem;
+            }
+            >p{
+                font-size: .75rem;
+            }
+        }
+    }
+
+        
+      .diploma {
+        width: 100%;
+        padding: 1rem;
+       
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        > h2 {
+          font-size: 1.1rem;
+          font-weight: 500;
+          align-self: flex-start;
+        }
+        > button {
+            align-self: flex-start;
+        
+        }
+        > .dip-card {
+          width: 320px;
+        }
+      }
+         
+      
+      
+
+
+.container{
+    
+    flex-direction:column-reverse;
+    
+.left-part{
+   width: 100%;
+    background-color: #f8f8f8;
+
+
+}
+
+.right-part{
+    background-color: white;
+    width:100%;
+  
+}
+  
+}
+
+}
+
+
+@media  only screen and (max-width:700px) {
+   
+    header{
+        animation: background 10s ease-in-out  infinite;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         >nav{
+            display: none;
+         }
+      
+      .second-nav {
+       display: none;
+      }
+   
+        
+        
+        .main {
+     
+          height: 50vh;
+          padding: 2rem .5rem;  
+          gap: 2rem;
+          h1 {
+          letter-spacing: 1px;
+          font-size: .88rem;
+          font-weight: 700;
+          > span {
+            margin-inline: 0.5rem;
+          }
+        }
+    
+        }
+        
+      }
+
+
+      .goal-section{
+       padding: 1rem;
+        >h2{
+             font-size: 1rem;
+            
+        }
+        >button{
+            width: fit-content;
+            align-self: center;
+            background-color: white;
+            border: 1px solid #ff7900;
+            color: #ff7900;
+            padding: .6rem .8rem;
+            border-radius: 5px;
+        }
+    }
+    
+    .cart{
+        width: 370px;
+
+    
+        >div{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            >h3{
+                font-size: .8rem;
+            }
+            >p{
+                font-size: .75rem;
+            }
+        }
+    }
+
+        
+      .diploma {
+        width: 100%;
+        padding: 1rem;
+       
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        > h2 {
+          font-size: 1rem;
+          font-weight: 500;
+          align-self: flex-start;
+        }
+        > button {
+            align-self: flex-start;
+        
+        }
+        > .dip-card {
+          width: 320px;
+        }
+      }
+      
+      .container{
+    
+        flex-direction:column-reverse;
+        width: 90%;
+    .left-part{
+       width: 100%;
+        background-color: #f8f8f8;
+    display: none;
+    
+    }
+    
+    .right-part{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 1rem 1rem;
+        >.upper{
+            border-bottom: 1px solid rgb(188, 188, 188);
+            padding: 2rem 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            >.left{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                >div{
+                    &:first-of-type{
+    
+                        height: 80px;
+                        box-shadow: 0 0 10px #888;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        width:80px;
+                    }
+                    &:last-of-type{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                    >h2{
+                        color: #ff7900;
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+                    >p{
+                        font-size: .8rem;
+                        font-weight: 500;
+                    }
+                    }
+                }
+               
+            }
+            >button{
+                width: 30px;
+                height: 30px;
+                background-color: #e9e9e9;
+                font-size: 1.5rem;
+                display: grid;
+                place-items: center;
+                font-weight: 700;
+                border-radius: 50%;
+                border: none;
+            }
+        }
+    
+        >.middle{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 1rem;
+            width: 100%;
+            padding: .5rem;
+            >input{
+                height: 7vh;
+                width: 95%;
+                padding-left: 1rem;
+                font-size: .9rem;
+                outline: none;
+                border: 1px solid rgb(226, 226, 226);
+                border-radius: 4px;
+            }
+    
+        }
+        
+        >.lower{
+            // padding: 1rem;   
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            >p{
+                font-size: .9rem;
+                font-weight: 600;
+                >span{
+                    color: rgb(0, 221, 221);
+                }
+            }
+            >div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >a{
+                    color: #ff7900;
+                    font-size: .8rem;
+                    &:hover{
+                      text-decoration: underline;
+                    }
+                }
+                >button{
+                    padding: .8rem 1rem;
+                    border: none;
+                    background-color: #ff7900;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+      
+    }
+       
+}
+

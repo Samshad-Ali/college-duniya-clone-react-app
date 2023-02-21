@@ -1,0 +1,262 @@
+header{
+  animation: background 10s ease-in-out  infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  nav {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0.5rem;
+  font-family: $nunito;
+  background-color: transparent;
+  // background-color: #555;
+  font-size: 0.9rem;
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    
+    > a {
+      color: white;
+      position: relative;
+      transition: all 0.3s;
+      &:hover {
+        color: #ff7900;
+      }
+      > .new {
+        color: orangered;
+        font-weight: 700;
+        font-family: $open-sense;
+        font-size: 0.5rem;
+        position: absolute;
+      }
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    > p {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.1rem;
+      transition: all 0.3s;
+      &:hover {
+        color: #ff7900;
+      }
+      
+      > svg {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.second-nav {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  background-color: transparent;
+  // background-color: #999;
+  
+  color: white;
+  font-family: $nunito;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > .left-side {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    > img {
+      max-width: 180px;
+      height: unset;
+      object-fit: contain;
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  > .right-side {
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      > a {
+        position: relative;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 20%;
+          border-radius: 10px;
+          top: 100%;
+          background-color: #ff7900;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    &:hover{
+      background-color: rgb(171, 171, 171);
+    }
+  }
+  
+  
+  .main {
+    // background-image:url('https://images.collegedunia.com/public/asset/img/homepage/banner/IIT1642250556.webp?mode=stretch');
+    // margin-top: -9rem;
+ position: relative;
+  width: 100%;
+    height: 80vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: $nunito;
+    // display: none;
+    h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $open-sense;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    > span {
+      margin-inline: 0.5rem;
+    }
+  }
+
+  >div{
+    width: 70%;
+    //  height: 19vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     >input{
+        height: 10vh;
+        outline:none;
+        border: none;
+        background-color: white;
+        width:90% ;
+        border-radius: 5px 0 0 5px;
+        padding-left: 3rem;
+        font-size: 1rem;
+      }
+     >svg{
+       position: absolute;
+        color: gray;
+        left: 3%;
+        font-size: 1rem;
+        
+      }
+      >.search{
+        height: 10vh;
+        background-color: #ff7900;
+        color: white;
+        border: none;
+        padding: 1rem;
+        border-radius: 0 5px 5px 0;
+
+     }
+    }
+
+    >.bottom{
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      >div{
+        >p{
+          color: white;
+          font-size: 1rem;
+          
+        }
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      
+      >button{
+        padding: .8rem 2rem;
+        background-color: #ff7900;
+        color: white;
+        border: none;
+       border-radius: 5px;
+       font-weight: 600;
+       transition: all .5s ease-in-out;
+       &:hover{
+         background-color: #bf5900;
+        }
+      }
+    }
+    
+  }
+  
+}
+  
+  
+  
+  .hoverItems {
+  >.hover{
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 70vw;
+    color: #000000;
+    border: 1px solid #bf5900;
+    border-radius: 8px;
+    position: absolute;
+    left: 25%;
+    top:7%;
+    z-index: 100;
+    letter-spacing: 2px;
+      line-height: 190%;
+  }
+}
+
+
+
+// ---------------------- Animation------------------------
+
+@keyframes background {
+  from{
+    background-image: url('https://images.collegedunia.com/public/asset/img/homepage/banner/IIT1642250660.webp?mode=stretch');
+  }
+to{
+    background-image: url('https://images.collegedunia.com/public/asset/img/homepage/banner/IIT1642250746.webp?mode=stretch');
+  }
+}
